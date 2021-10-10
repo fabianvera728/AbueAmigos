@@ -1,0 +1,46 @@
+ion-content{
+    --paddign-top: 2rem;
+    --padding-start: 2rem;
+    --padding-end: 2rem;
+}
+
+.contact__content{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    text-align: center;
+}
+
+ion-footer{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+}
+.contact__options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    ion-button{
+        width: --webkit-fill-available;
+    }
+}
+.contact__conversation{
+    display: flex;
+    gap: .5rem;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 4.5rem;
+        height: auto;
+        border-radius: 1rem;
+    }
+}
+
+.buttom-contact{
+    --background: var(--color-primary-green);
+    --background-activated: var(--color-primary-green);
+}

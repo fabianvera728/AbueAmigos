@@ -1,0 +1,25 @@
+ion-content{
+    --paddign-top: 1rem;
+    --padding-start: 2rem;
+    --padding-end: 2rem;
+}
+
+.profile__content{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+.button__options{
+    margin-right: 8rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__avatar{
+    width: 13rem;
+    border-radius: 50%;
+}

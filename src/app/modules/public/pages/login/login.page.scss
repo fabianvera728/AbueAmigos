@@ -1,0 +1,18 @@
+ion-slides {
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+ion-content{
+  --padding-bottom: 1rem;
+  --padding-top: 1rem;
+  --padding-start: 2rem;
+  --padding-end: 2rem;
+}

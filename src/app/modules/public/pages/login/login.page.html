@@ -1,0 +1,23 @@
+<ion-header class="toolbar-no-border no-border" mode="ios">
+  <ion-toolbar>
+    <img class="brand" src="../../../../../assets/shapes/logo.svg" />
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="ios">
+  <form action="" [formGroup]="loginForm">
+    <ion-slides #mySlide>
+      <ion-slide>
+        <ion-text>
+          <h1>Iniciemos Sesión y contactemos</h1>
+        </ion-text>
+        <div>
+          <ion-input formControlName="email" placeholder="Cédula"></ion-input>
+          <ion-input formControlName="password" type="password" placeholder="Contraseña"></ion-input>
+        </div>
+        <ion-button (click)="onSubmit()" class="buttom-yellow">Entrar</ion-button>
+      </ion-slide>
+    </ion-slides>
+  </form>
+  <img class="image__footer" src="../../../../../assets/images/home-1.svg" alt="">
+</ion-content>

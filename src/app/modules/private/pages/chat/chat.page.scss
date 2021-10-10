@@ -1,0 +1,14 @@
+ion-content{
+    --paddign-top: 2rem;
+    --padding-start: 2rem;
+    --padding-end: 2rem;
+}
+
+.chat__content{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    justify-content: center;
+}

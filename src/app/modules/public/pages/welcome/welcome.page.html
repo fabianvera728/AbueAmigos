@@ -1,0 +1,29 @@
+<ion-header class="toolbar-no-border no-border" mode="ios">
+  <ion-toolbar>
+    <img class="brand" src="../../../../../assets/shapes/logo.svg" />
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="ios">
+  <ion-slides #mySlide>
+    <ion-slide>
+      <img src="../../../../../assets/images/welcome-1.svg" alt="" />
+      <div>
+        <p>Sientete acompañado</p>
+        <p>Es fácil y sencillo</p>
+      </div>
+
+      <ion-button class="buttom-yellow" (click)="swipeNext()">Siguiente</ion-button>
+    </ion-slide>
+    <ion-slide>
+      <img src="../../../../../assets/images/welcome-2.svg" alt="" />
+      <div>
+        <p>Sientete acompañado</p>
+        <p>Es fácil y sencillo</p>
+      </div>
+      <ion-button class="buttom-yellow" slot="bottom" [routerLink]="['/public/register']">
+        Siguiente
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

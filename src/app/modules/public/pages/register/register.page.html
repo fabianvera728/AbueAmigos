@@ -1,0 +1,71 @@
+<ion-header class="toolbar-no-border no-border" mode="ios">
+  <ion-toolbar>
+    <img class="brand" src="../../../../../assets/shapes/logo.svg" />
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-layout" mode="ios">
+  <form action="" [formGroup]="registerForm">
+    <ion-slides #mySlide>
+      <ion-slide>
+        <div>
+          <p class="has-font-size-ideal-2">Bienvenido Soy ROBOT tu ayudante</p>
+          <h1>¿Cómo te llamas?</h1>
+        </div>
+        <div>
+          <ion-input
+            formControlName="first_name"
+            placeholder="Nombres"
+          ></ion-input>
+          <ion-input
+            formControlName="last_name"
+            placeholder="Apellidos"
+          ></ion-input>
+        </div>
+        <ion-button class="buttom-yellow" (click)="swipeNext()">
+          Sigue
+        </ion-button>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <p class="has-font-size-ideal-2">Te ayudo en tu proceso.</p>
+          <ion-text>
+            <h1>¿Cómo te contacto?</h1>
+          </ion-text>
+        </div>
+        <div>
+          <ion-input placeholder="Fecha de nacimiento"></ion-input>
+          <ion-input
+            formControlName="phone_number"
+            placeholder="Celular"
+          ></ion-input>
+        </div>
+        <ion-button class="buttom-yellow" (click)="swipeNext()">
+          Sigue
+        </ion-button>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <p class="has-font-size-ideal-2">¡Ya casi terminamos! por seguridad</p>
+          <ion-text>
+            <h1>Crea tu contrasema</h1>
+          </ion-text>
+        </div>
+        <div>
+          <ion-input
+            formControlName="username"
+            placeholder="Cédula"
+          ></ion-input>
+          <ion-input
+            formControlName="password"
+            placeholder="Contraseña"
+          ></ion-input>
+        </div>
+        <ion-button class="buttom-yellow" (click)="onSubmit()">
+          Sigue
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </form>
+  <img class="image__footer" src="../../../../../assets/images/register-3.svg" alt="">
+</ion-content>

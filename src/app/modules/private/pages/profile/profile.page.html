@@ -1,0 +1,22 @@
+<ion-header slot="top" class="toolbar-no-border no-border" mode="ios">
+  <ion-toolbar>
+    <img class="brand" src="../../../../../assets/shapes/logo.svg" />
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="ios">
+  <div class="profile__content">
+    <ion-text>
+      <h1  class="has-font-size-ideal">Mi perfil</h1>
+    </ion-text>
+    <img class="profile__avatar" src="../../../../../assets/images/profile.png" alt="">
+    <p class="has-font-size-ideal-2">{{user?.user?.first_name+' '+user?.user?.last_name}}</p>
+    <p class="has-font-size-ideal-2">{{user?.phone_number}}</p>
+    <div class="button__options">
+      <ion-button class="buttom-yellow">Editar</ion-button>
+      <ion-button [routerLink]="['/private/home']" class="buttom-outline-green">Volver</ion-button>
+    </div>
+    
+  </div>
+  <img class="image__footer" src="../../../../../assets/images/profile-1.svg" alt="">
+</ion-content>

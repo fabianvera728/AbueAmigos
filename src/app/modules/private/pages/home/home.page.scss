@@ -1,0 +1,29 @@
+ion-content{
+    --paddign-top: 2rem;
+    --padding-start: 2rem;
+    --padding-end: 2rem;
+}
+
+.home__content{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.home__display{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+    height: 100%;
+    padding-bottom: 4rem;
+    justify-content: space-between;
+}
+
+.position-button{
+    margin-left: 2.5rem;
+}

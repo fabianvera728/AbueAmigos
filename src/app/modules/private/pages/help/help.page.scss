@@ -1,0 +1,26 @@
+ion-content{
+    --paddign-top: 2rem;
+    --padding-start: 2rem;
+    --padding-end: 2rem;
+}
+
+.help__content{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+.buttom__option{
+    border-radius: var(--rounded-medium);
+    border: solid 1px var(--color-primary-green);
+    padding: .5rem 1rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    font-size: 1.3em;
+    :hover{
+        background: var(--color-primary-yellow);
+    }
+}
+
