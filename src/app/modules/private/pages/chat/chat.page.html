@@ -1,13 +1,36 @@
 <ion-header slot="top" class="toolbar-no-border no-border" mode="ios">
   <ion-toolbar>
-    <img class="brand" src="../../../../../assets/shapes/logo.svg" />
+    <img class="brand avatar-profile" src="../../../../../assets/images/profile.png" />
     <ion-title>{{'Aureliano Buendia'}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content mode="ios">
   <div>
-    Mensajes
+    <div *ngFor="let message of messages">
+      <div *ngIf="message.type === 'contact'" class="message__c">
+        <div class="message message__user">
+          {{message.message}}
+        </div>
+      </div>
+      <div *ngIf="message.type === 'user'" class="message__u">
+        <div class="message message__contact">
+          {{message.message}}
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
+<ion-footer>
+  <div>  
+    <ion-button class="buttom-contact"><ion-icon name="call-outline"></ion-icon></ion-button>
+    <form action="" [formGroup]="messageForm">
+        <ion-input formControlName="message" placeholder="Escribe tu mensaje">
+  </ion-input>
+    </form>
 
+  <ion-button (click)="sendMessage()" class="buttom-contact-2"><ion-icon name="send-outline"></ion-icon></ion-button>
+
+  </div>
+
+</ion-footer>
