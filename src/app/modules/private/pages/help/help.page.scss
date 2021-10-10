@@ -18,15 +18,29 @@ ion-content{
   flex-direction: column;
 }
 
+.card {
+  border-radius: var(--rounded-medium);
+  margin-bottom: .5rem;
+}
+
+.card:hover {
+  border-radius: var(--rounded-medium);
+  background: rgb(233, 233, 233);
+}
+
 .buttom__option{
     border-radius: var(--rounded-medium);
     border: solid 1px var(--color-primary-green);
     padding: .5rem 1rem;
     width: 100%;
-    margin-bottom: .5rem;
+
     font-size: 1.3em;
-    :hover{
+    /* :hover{
         background: var(--color-primary-yellow);
+    } */
+
+    .card {
+      margin: 0;
     }
 }
 
