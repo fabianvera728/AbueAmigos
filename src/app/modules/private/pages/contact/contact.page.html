@@ -22,7 +22,7 @@
         <p>Artista de pecesito</p>
         <p>72 años</p>
       </div>
-      <ion-button class="buttom-contact">
+      <ion-button [routerLink]="['/private/chat', conversation.id]" class="buttom-contact">
         <ion-icon name="chatbox-ellipses-outline"></ion-icon>
       </ion-button>
     </div>
