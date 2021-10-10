@@ -17,7 +17,7 @@
       />
       <div>
         <h2>
-          {{conversation?.user?.first_name+''+conversation?.user?.last_name}}
+          {{conversation?.user?.first_name+' '+conversation?.user?.last_name | titlecase}}
         </h2>
         <p>Artista de pecesito</p>
         <p>72 años</p>
@@ -38,7 +38,7 @@
 </ion-content>
 <ion-footer>
   <div class="contact__options">
-    <ion-button (click)="sendConversations()" class="buttom-yellow">Charla con Abue</ion-button>
+    <ion-button (click)="sendConversations()" class="buttom-yellow">Quiero conversar</ion-button>
     <ion-button
       [routerLink]="['/private/home']"
       class="buttom-outline-green has-font-size-ideal-2"

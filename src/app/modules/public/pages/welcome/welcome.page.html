@@ -12,18 +12,22 @@
         <p>Sientete acompañado</p>
         <p>Es fácil y sencillo</p>
       </div>
-
-      <ion-button class="buttom-yellow" (click)="swipeNext()">Siguiente</ion-button>
+      <section class="welcome__options">
+        <ion-button class="buttom-yellow" (click)="swipeNext()">Siguiente</ion-button>
+      </section>
     </ion-slide>
     <ion-slide>
       <img src="../../../../../assets/images/welcome-2.svg" alt="" />
       <div>
-        <p>Sientete acompañado</p>
-        <p>Es fácil y sencillo</p>
+        <p>Puedes conversar</p>
+        <p>con alguien</p>
       </div>
-      <ion-button class="buttom-yellow" slot="bottom" [routerLink]="['/public/register']">
-        Siguiente
-      </ion-button>
+      <section class="welcome__options">
+        <ion-button class="buttom-yellow" expand="block"
+          [routerLink]="['/public/register']">
+          Siguiente
+        </ion-button>
+      </section>
     </ion-slide>
   </ion-slides>
 </ion-content>

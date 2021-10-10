@@ -11,11 +11,13 @@
         <ion-text>
           <h1>Iniciemos Sesión y contactemos</h1>
         </ion-text>
-        <div>
+        <div class="login__options">
           <ion-input formControlName="email" placeholder="Cédula"></ion-input>
           <ion-input formControlName="password" type="password" placeholder="Contraseña"></ion-input>
         </div>
-        <ion-button (click)="onSubmit()" class="buttom-yellow">Entrar</ion-button>
+        <div class="login__options">
+          <ion-button (click)="onSubmit()" class="buttom-yellow">Entrar</ion-button>
+        </div>
       </ion-slide>
     </ion-slides>
   </form>

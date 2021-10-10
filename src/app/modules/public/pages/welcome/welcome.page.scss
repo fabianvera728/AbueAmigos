@@ -2,6 +2,17 @@ ion-slides {
   height: 100%;
 }
 
+.welcome__options {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom:0.3rem;
+}
+
 .swiper-slide {
   display: flex;
   width: 100%;
@@ -10,3 +21,5 @@ ion-slides {
   justify-content: space-between;
   padding-bottom: 2rem;
 }
+
+

@@ -10,6 +10,13 @@ ion-slides {
   justify-content: space-between;
   padding-bottom: 2rem;
 }
+
+.login__options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 ion-content{
   --padding-bottom: 1rem;
   --padding-top: 1rem;

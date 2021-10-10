@@ -5,7 +5,7 @@ ion-content{
 }
 
 .home__content{
-    display: flex; 
+    display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@ ion-content{
 }
 
 .home__display{
-    display: flex; 
+    display: flex;
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
@@ -26,4 +26,11 @@ ion-content{
 
 .position-button{
     margin-left: 2.5rem;
+}
+
+
+.home__button {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }

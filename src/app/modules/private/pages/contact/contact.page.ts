@@ -22,7 +22,7 @@ export class ContactPage implements OnInit{
     this.getConversations();
     setTimeout(() => {
       console.log('Async operation has ended');
-      /* event.target.complete(); */
+      event.target.complete();
     }, 1000);
   }
 
@@ -51,5 +51,4 @@ export class ContactPage implements OnInit{
       }
     );
   }
-
 }

@@ -7,16 +7,18 @@
 <ion-content mode="ios">
   <div class="profile__content">
     <ion-text>
-      <h1  class="has-font-size-ideal">Mi perfil</h1>
+      <h1 class="has-font-size-ideal">Mi perfil</h1>
     </ion-text>
-    <img class="profile__avatar" src="../../../../../assets/images/profile.png" alt="">
-    <p class="has-font-size-ideal-2">{{user?.user?.first_name+' '+user?.user?.last_name}}</p>
+    <img class="profile__avatar" src="../../../../../assets/images/profile.png"
+      alt="">
+    <strong> <p class="has-font-size-ideal">{{user?.user?.first_name+'
+        '+user?.user?.last_name | titlecase}}</p></strong>
     <p class="has-font-size-ideal-2">{{user?.phone_number}}</p>
     <div class="button__options">
       <ion-button class="buttom-yellow">Editar</ion-button>
       <ion-button [routerLink]="['/private/home']" class="buttom-outline-green">Volver</ion-button>
     </div>
-    
   </div>
-  <img class="image__footer" src="../../../../../assets/images/profile-1.svg" alt="">
+  <img class="image__footer" src="../../../../../assets/images/profile-1.svg"
+    alt="">
 </ion-content>

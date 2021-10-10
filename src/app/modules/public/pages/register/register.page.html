@@ -12,19 +12,20 @@
           <p class="has-font-size-ideal-2">Bienvenido Soy ROBOT tu ayudante</p>
           <h1>¿Cómo te llamas?</h1>
         </div>
-        <div>
+        <div class="welcome__options">
           <ion-input
             formControlName="first_name"
-            placeholder="Nombres"
-          ></ion-input>
+            placeholder="Nombres"></ion-input>
           <ion-input
+
             formControlName="last_name"
-            placeholder="Apellidos"
-          ></ion-input>
+            placeholder="Apellidos"></ion-input>
         </div>
-        <ion-button class="buttom-yellow" (click)="swipeNext()">
-          Sigue
-        </ion-button>
+        <section class="welcome__options">
+          <ion-button class="buttom-yellow" (click)="swipeNext()">
+            Sigue
+          </ion-button>
+        </section>
       </ion-slide>
       <ion-slide>
         <div>
@@ -33,39 +34,41 @@
             <h1>¿Cómo te contacto?</h1>
           </ion-text>
         </div>
-        <div>
+        <div class="welcome__options">
           <ion-input placeholder="Fecha de nacimiento"></ion-input>
           <ion-input
             formControlName="phone_number"
-            placeholder="Celular"
-          ></ion-input>
+            placeholder="Celular"></ion-input>
         </div>
-        <ion-button class="buttom-yellow" (click)="swipeNext()">
-          Sigue
-        </ion-button>
+        <div class="welcome__options">
+          <ion-button class="buttom-yellow" (click)="swipeNext()">
+            Sigue
+          </ion-button>
+        </div>
       </ion-slide>
       <ion-slide>
         <div>
           <p class="has-font-size-ideal-2">¡Ya casi terminamos! por seguridad</p>
           <ion-text>
-            <h1>Crea tu contrasema</h1>
+            <h1>Crea tu contraseña</h1>
           </ion-text>
         </div>
-        <div>
+        <div  class="welcome__options">
           <ion-input
             formControlName="username"
-            placeholder="Cédula"
-          ></ion-input>
+            placeholder="Cédula"></ion-input>
           <ion-input
             formControlName="password"
-            placeholder="Contraseña"
-          ></ion-input>
+            placeholder="Contraseña"></ion-input>
         </div>
-        <ion-button class="buttom-yellow" (click)="onSubmit()">
-          Sigue
-        </ion-button>
+        <div class="welcome__options">
+          <ion-button class="buttom-green" (click)="onSubmit()">
+            Crear
+          </ion-button>
+        </div>
       </ion-slide>
     </ion-slides>
   </form>
-  <img class="image__footer" src="../../../../../assets/images/register-3.svg" alt="">
+  <img class="image__footer" src="../../../../../assets/images/register-3.svg"
+    alt="">
 </ion-content>

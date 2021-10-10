@@ -10,25 +10,28 @@
       <ion-text>
         <h1 class="has-font-size-ideal">¿Qué deseas hacer?</h1>
       </ion-text>
-      <ion-button
-        [routerLink]="['/private/contact']"
-        class="buttom-yellow button-width"
-      >
-        Quiero conversar
-      </ion-button>
-      <ion-button
-        [routerLink]="['/private/profile']"
-        class="buttom-yellow button-width"
-      >
-        Ver mi perfil
-      </ion-button>
+      <div class="home__button">
+        <ion-button
+          [routerLink]="['/private/contact']"
+          class="buttom-yellow">
+          Quiero conversar
+        </ion-button>
+      </div>
+      <div class="home__button">
+        <ion-button
+          [routerLink]="['/private/profile']"
+          class="buttom-yellow">
+          Ver mi perfil
+        </ion-button>
+      </div>
     </div>
-    <ion-button [routerLink]="['/private/help']" class="buttom-outline-green position-button">Ayuda</ion-button>
+    <ion-button [routerLink]="['/private/help']" class="buttom-outline-green
+      position-button">Ayuda</ion-button>
   </div>
 
   <img
     class="image__footer"
     src="../../../../../assets/images/home-1f.svg"
     alt=""
-  />
+    />
 </ion-content>
