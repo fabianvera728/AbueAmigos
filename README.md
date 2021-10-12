@@ -45,5 +45,5 @@ Our mobile App will allow the elderly to enjoy the accompaniment of AbueAmigos, 
 
 The developers have contributed to this project:
 
-* Fabian Vera Carrillo - <a href="https://gitlab.com/fabianvera728"> fabianvera728 </a>
-* Wilmer Rodríguez Sánchez - <a href="https://gitlab.com/WilmerRS10"> WilmerRS10 </a>
+* Fabian Vera Carrillo - <a href="https://github.com/fabianvera728"> fabianvera728 </a>
+* Wilmer Rodríguez Sánchez - <a href="https://github.com/WilmerRS"> WilmerRS </a>
